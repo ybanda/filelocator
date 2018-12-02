@@ -13,9 +13,11 @@ Folder Index Locator
 <tr th:each="file: ${fileList}">
    <!-- 
      <td><input type="text" disabled="disabled" th:value="${file}" name="path"/></td>-->
-     <td><a th:href="@{/download(path=${file})}" target="_blank"><input type="text" th:value="${file}"  /></a></td>
-     <td><input type="submit" value="Download" /></td>
+     <td><a th:href="@{/download(path=${file})}" target="_blank">
+     <input type="text" th:value="${file}" min="120" style="width: 800px;color: blue" /></a></td>
+    
   <!-- 
+   <td><input type="submit" value="Download" /></td>
      <td><input type="text" disabled="disabled" th:value="${file}" name="path"/></td>
      <td><input type="submit" value="Download" /></td> -->
   
