@@ -9,3 +9,5 @@ mvn clean install
 War file will be available under folder 
 
 filelocator\target\filelocator-0.0.1-SNAPSHOT.war
+
+App Accessed at http://localhost:8080/FileLocator/
