@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Folder Index Locator</title>
+
+</head>
+<body>
+Folder Index Locator
+  <form action="/download" method="post">
+  
+<table center border=1>
+<tr th:each="file: ${fileList}">
+   <!-- 
+     <td><input type="text" disabled="disabled" th:value="${file}" name="path"/></td>-->
+     <td><a th:href="@{/download(path=${file})}" target="_blank"><input type="text" th:value="${file}"  /></a></td>
+     <td><input type="submit" value="Download" /></td>
+  <!-- 
+     <td><input type="text" disabled="disabled" th:value="${file}" name="path"/></td>
+     <td><input type="submit" value="Download" /></td> -->
+  
+ </tr>
+ </table>
+   </form>
+
+
+</body>
+</html>
