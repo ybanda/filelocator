@@ -1,0 +1,4 @@
+com\tomcat\filelocator\ClientWebConfig.class
+com\tomcat\filelocator\FileController.class
+com\tomcat\filelocator\FilelocatorApplication.class
+com\tomcat\filelocator\FileController$Download.class
