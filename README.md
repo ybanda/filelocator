@@ -5,6 +5,7 @@ Properties file available under filelocator\src\main\resources\application.prope
 once the properties for folder path are changed, run the below command
 
 mvn clean install -DSkipTests=true
+
 mvn spring-boot run
 
 War file will be available under folder 
